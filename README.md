@@ -34,9 +34,10 @@ let apiParameters = {
 client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers can also be passed
 ```
 
+
 ## Documentation
 ### processImage
-`js processImage([parameters], [uploadData], callback)`
+`processImage([parameters], [uploadData], callback)`
 - `[parameters]` <Object> Optional Abbyy API method parameters. Object with string properties.
 - `[uploadData]` <string> or <Buffer> Optional upload data required for Abbyy API method. Can be either a string representing a file path, or a Buffer object. 
 - `callback(err, results)` <Function> User callback to process results of OCR. Will return an `err` if anything goes wrong in the OCR process, otherwise returns the `results` of the API method. `results` are either OCR results or a taskId, in the case of the submitImage API method.
