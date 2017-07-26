@@ -56,7 +56,7 @@ class Task
         this.responseBuffer = Buffer.concat([this.responseBuffer, responseData]);
     }
 
-    processResponse() // Process task response from Abbyy server
+    processResponse() // Process Abbyy response
     {
         // Parse XML response and then process it further
         let parserOptions = 
