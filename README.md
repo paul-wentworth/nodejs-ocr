@@ -54,9 +54,9 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
  
 ### submitImage
 `submitImage([parameters], uploadData, callback)`
-- `[parameters]` `<Object>` Optional Abbyy API method parameters.
-- `uploadData` `<string>` or `<Buffer>` File (image, pdf, etc) to be uploaded to Abbyy server.  
-- `callback(err, results)` `<Function>` Callback to return `err`s or Task ID string representing uploaded image.
+- `[parameters]`,`<Object>` Optional Abbyy API method parameters.
+- `uploadData`,`<string>`or`<Buffer>` File (image, pdf, etc) to be uploaded to Abbyy server.  
+- `callback(err, results)`,`<Function>` Callback to return `err`s or Task ID string representing uploaded image.
  
  
 ### processDocument
