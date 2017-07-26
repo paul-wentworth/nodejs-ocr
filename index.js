@@ -19,7 +19,7 @@ class Task
         this.waitForTaskCompletion    = this.waitForTaskCompletion.bind(this); 
         this.getTaskStatus            = this.getTaskStatus.bind(this); 
         this.downloadResults          = this.downloadResults.bind(this);
-        this.receiveResults           = this.receiveResponse.bind(this); 
+        this.receiveResults           = this.receiveResults.bind(this); 
         this.processResults           = this.processResults.bind(this); 
         this.error                    = this.error.bind(this); 
         this.finish                   = this.finish.bind(this); 
