@@ -148,8 +148,8 @@ class Task
     {
         let requestOptions = url.parse(resultsUrl); // [TODO] Test if this is always https url anyway
         let request = undefined;
-        if (requestOptions.protocol == 'http:') { request = http.request(requestOptions, this.receiveResponse); } 
-        else { request = https.request(requestOptions, this.receiveResponse); }
+        if (requestOptions.protocol == 'http:') { request = http.request(requestOptions, this.receiveResults); } 
+        else { request = https.request(requestOptions, this.receiveResults); }
 
         request.on('error', this.error);
         request.end();
