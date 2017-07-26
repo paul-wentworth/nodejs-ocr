@@ -4,14 +4,12 @@ A simple and easy to use client to perform OCR using ABBYY Cloud OCR SDK.
 
 Implements the processImage, submitImage, processDocument, processTextField and processFields methods from the [OCR SDK API:](http://ocrsdk.com/documentation/apireference/). 
 
-
-
 # Install
-```
+```cli
 npm install nodejs-ocr
 ```
 # Import
-```
+```json
 let AbbyyClient = require('nodejs-ocr')
 ```
 # Creating a client object
