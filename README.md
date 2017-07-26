@@ -18,6 +18,7 @@ let AbbyyClient = require('nodejs-ocr');
 let client = new AbbyyClient('myAppId', 'myPassword', 'http://cloud.ocrsdk.com'); // Use https here if you'd like
 ```
 ### Running an API method and using the results
+- More information on API Parameters can be found here: (http://ocrsdk.com/documentation/apireference/)
 ```js
 function ocrComplete(err, results) {
     if( !err ) {
@@ -37,11 +38,33 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
 
 ## Documentation
 ### processImage
-`processImage([parameters], [uploadData], callback)`
+`processImage([parameters], uploadData, callback)`
 - `[parameters]` <Object> Optional Abbyy API method parameters. Object with string properties.
-- `[uploadData]` <string> or <Buffer> Optional upload data required for Abbyy API method. Can be either a string representing a file path, or a Buffer object. 
-- `callback(err, results)` <Function> User callback to process results of OCR. Will return an `err` if anything goes wrong in the OCR process, otherwise returns the `results` of the API method. `results` are either OCR results or a taskId, in the case of the submitImage API method.
+- `uploadData` <string> or <Buffer> Image to be processed by API method.  
+- `callback(err, results)` <Function> Callback to return `err`s or OCR `results`. 
 
+### processTextField
+`processTextField(parameters, uploadData, callback)`
+- `parameters` <Object> Optional Abbyy API method parameters. Object with string properties. A text field region must be specified. 
+- `uploadData` <string> or <Buffer> Image to be processed by API method.  
+- `callback(err, results)` <Function> Callback to return `err`s or OCR `results`.
+
+### submitImage
+`submitImage([parameters], uploadData, callback)`
+- `[parameters]` <Object> Optional Abbyy API method parameters. Object with string properties.
+- `uploadData` <string> or <Buffer> File (image, pdf, etc) to be uploaded to Abbyy server.  
+- `callback(err, results)` <Function> Callback to return `err`s or Task ID string representing uploaded image.
+
+### processDocument
+`processDocument(parameters, callback)`
+- `parameters` <Object> Abbyy API method parameters. Object with string properties. Task ID is required.
+- `callback(err, results)` <Function> Callback to return `err`s or OCR `results`.
+
+### processFields
+`processFields(parameters, fieldsXml, callback)`
+- `parameters` <Object> Abbyy API method parameters. Object with string properties. Task ID is required.
+- `uploadData` <string> or <Buffer> XML representing fields to be processed by API method. 
+- `callback(err, results)` <Function> Callback to return `err`s or OCR `results`.
 
 
 
