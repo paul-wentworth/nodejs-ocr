@@ -41,7 +41,7 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
 ### processImage
 `processImage([parameters], uploadData, callback)`
 - `[parameters]` `<Object>` Optional Abbyy API method parameters. Object with string properties.
-- `uploadData` `<string>` or <Buffer> Image to be processed by API method.  
+- `uploadData` `<string>` or `<Buffer>` Image to be processed by API method.  
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
  
  
