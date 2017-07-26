@@ -66,7 +66,7 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
  
   
 ### processFields
-`processFields(parameters, fieldsXml, callback)`
+`processFields(parameters, uploadData, callback)`
 - `parameters` `<Object>` Abbyy API method parameters. Task ID is required.
 - `uploadData` `<string>` or `<Buffer>` XML representing fields to be processed by API method. 
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
