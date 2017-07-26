@@ -10,7 +10,7 @@ $ npm install nodejs-ocr
 ```
 ## Import
 ```js
-let AbbyyClient = require('nodejs-ocr')
+let AbbyyClient = require('nodejs-ocr');
 ```
 ## Creating a client object
 - Provide your Abbyy application id and password, available free at: (http://ocrsdk.com)
