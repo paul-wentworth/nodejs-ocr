@@ -18,7 +18,7 @@ let AbbyyClient = require('nodejs-ocr');
 let client = new AbbyyClient('myAppId', 'myPassword', 'http://cloud.ocrsdk.com'); // Use https here if you'd like
 ```
 ### Running an API method and using the results
-- More information on API Parameters can be found here: [http://ocrsdk.com/documentation/apireference/](http://ocrsdk.com/documentation/apireference/)
+- More information on API Parameters can be found here [http://ocrsdk.com/documentation/apireference/](http://ocrsdk.com/documentation/apireference/)
 ```js
 function ocrComplete(err, results) {
     if( !err ) {
