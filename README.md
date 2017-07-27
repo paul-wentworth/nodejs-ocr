@@ -26,16 +26,17 @@ let client = new AbbyyClient('myAppId', 'myPassword', 'https://cloud.ocrsdk.com'
 ```js
 function ocrComplete(err, results) {
     if( !err ) {
-        console.log(results); // Raw results of completed Task (or a TaskId for submitImage calls)
+        console.log(results.toString()); // Raw results of completed Task (or a TaskId for submitImage calls)
     }
 }
 
 let apiParameters = {
     language: 'English',
     profile:  'textExtraction',
-    textType: 'typewriter'
+    textType: 'typewriter',
+    exportFormat: 'xml'
     // etc...
-}
+};
 client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers can also be passed
 ```
  
