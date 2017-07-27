@@ -22,7 +22,7 @@ let AbbyyClient = require('nodejs-ocr');
 let client = new AbbyyClient('myAppId', 'myPassword', 'https://cloud.ocrsdk.com'); // Use https here if you'd like
 ```
 ### Running an API method and using the results
-- More information on API Parameters can be found here [http://ocrsdk.com/documentation/apireference/](http://ocrsdk.com/documentation/apireference/)
+- More information on API Parameters can be found here: [API Reference](http://ocrsdk.com/documentation/apireference/).
 ```js
 function ocrComplete(err, results) {
     if( !err ) {
@@ -46,8 +46,8 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
 - `[parameters]` `<Object>` Optional Abbyy API method parameters. Object with string properties.
 - `uploadData` `<string>` or `<Buffer>` Image to be processed by API method.  
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
- 
- 
+
+
 ### processTextField(parameters, uploadData, callback)
 - `parameters` `<Object>` Abbyy API method parameters. A text field region must be specified. 
 - `uploadData` `<string>` or `<Buffer>` File to be processed by API method.  
