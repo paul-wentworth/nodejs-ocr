@@ -61,13 +61,13 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
  
  
 ### processDocument(parameters, callback)
-- `parameters` `<Object>` Abbyy API method parameters. Task ID is required.
+- `parameters` `<Object>` Abbyy API method parameters. Task ID corresponding to a file uploaded via submitImage is required.
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
  
   
 ### processFields(parameters, uploadData, callback)
-- `parameters` `<Object>` Abbyy API method parameters. Task ID is required.
-- `uploadData` `<string>` or `<Buffer>` XML representing fields to be processed by API method. 
+- `parameters` `<Object>` Abbyy API method parameters. Task ID corresponding to a file uploaded via submitImage is required.
+- `uploadData` `<string>` or `<Buffer>` XML representing fields to be processed by API method. For more information on the format of this XML see: [XML Parameters of Field Recognition](http://ocrsdk.com/documentation/specifications/xml-scheme-field-settings/).
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
 
       
