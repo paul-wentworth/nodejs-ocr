@@ -44,28 +44,24 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
  
  
-### processTextField
-`processTextField(parameters, uploadData, callback)`
+### `processTextField(parameters, uploadData, callback)`
 - `parameters` `<Object>` Abbyy API method parameters. A text field region must be specified. 
 - `uploadData` `<string>` or `<Buffer>` Image to be processed by API method.  
 - `callback(err, results)` <Function> Callback to return `err`s or OCR `results`.
  
  
-### submitImage
-`submitImage([parameters], uploadData, callback)`
+### `submitImage([parameters], uploadData, callback)`
 - `[parameters]` `<Object>` Optional Abbyy API method parameters.
 - `uploadData` `<string>` or `<Buffer>` File (image, pdf, etc) to be uploaded to Abbyy server.  
 - `callback(err, results)` `<Function>` Callback to return `err`s or Task ID string representing uploaded image.
  
  
-### processDocument
-`processDocument(parameters, callback)`
+### `processDocument(parameters, callback)`
 - `parameters` `<Object>` Abbyy API method parameters. Task ID is required.
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
  
   
-### processFields
-`processFields(parameters, uploadData, callback)`
+### `processFields(parameters, uploadData, callback)`
 - `parameters` `<Object>` Abbyy API method parameters. Task ID is required.
 - `uploadData` `<string>` or `<Buffer>` XML representing fields to be processed by API method. 
 - `callback(err, results)` `<Function>` Callback to return `err`s or OCR `results`.
