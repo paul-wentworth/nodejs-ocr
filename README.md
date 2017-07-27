@@ -46,14 +46,14 @@ client.processImage(apiParameters, './localFile.png', ocrComplete); // Buffers c
  
 ### processTextField(parameters, uploadData, callback)
 - `parameters` `<Object>` Abbyy API method parameters. A text field region must be specified. 
-- `uploadData` `<string>` or `<Buffer>` Image to be processed by API method.  
+- `uploadData` `<string>` or `<Buffer>` File to be processed by API method.  
 - `callback(err, results)` <Function> Callback to return `err`s or OCR `results`.
  
  
 ### submitImage([parameters], uploadData, callback)
 - `[parameters]` `<Object>` Optional Abbyy API method parameters.
-- `uploadData` `<string>` or `<Buffer>` File (image, pdf, etc) to be uploaded to Abbyy server.  
-- `callback(err, results)` `<Function>` Callback to return `err`s or Task ID string representing uploaded image.
+- `uploadData` `<string>` or `<Buffer>` File to be uploaded to Abbyy server.  
+- `callback(err, results)` `<Function>` Callback to return `err`s or Task ID string representing uploaded file.
  
  
 ### processDocument(parameters, callback)
