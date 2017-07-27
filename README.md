@@ -19,7 +19,7 @@ let AbbyyClient = require('nodejs-ocr');
 - Provide your Abbyy application id and password, available free at: [http://ocrsdk.com](http://ocrsdk.com)
 - Provide the protocol (http/https) and server hostname.
 ```js
-let client = new AbbyyClient('myAppId', 'myPassword', 'http://cloud.ocrsdk.com'); // Use https here if you'd like
+let client = new AbbyyClient('myAppId', 'myPassword', 'https://cloud.ocrsdk.com'); // Use https here if you'd like
 ```
 ### Running an API method and using the results
 - More information on API Parameters can be found here [http://ocrsdk.com/documentation/apireference/](http://ocrsdk.com/documentation/apireference/)
