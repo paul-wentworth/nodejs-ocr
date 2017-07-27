@@ -2,7 +2,11 @@
 
 A simple and easy to use client to perform OCR using ABBYY Cloud OCR SDK.
 
-Implements the processImage, submitImage, processDocument, processTextField and processFields methods from the [OCR SDK API:](http://ocrsdk.com/documentation/apireference/) 
+Unlike the alternatives, ABBYY's OCR is simple and practical. It's perfect for reliably reading basic text from pictures, documents, cheques, receipts and business cards. Requires no setup. OCR results are dependably consistent - the same input will never yield different results.
+
+Implements the processImage, submitImage, processDocument, processTextField and processFields methods from the [OCR SDK API](http://ocrsdk.com/documentation/apireference/).
+
+
 
 ## Quick Start
 ### Install
