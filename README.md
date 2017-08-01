@@ -11,7 +11,7 @@ Implements the processImage, submitImage, processDocument, processTextField and 
 ## Quick Start
 ### Install
 `$ npm install nodejs-ocr`
-### Import
+### Importing
 ```js
 let AbbyyClient = require('nodejs-ocr');
 ```
